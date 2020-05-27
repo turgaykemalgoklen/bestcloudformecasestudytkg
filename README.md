@@ -1,4 +1,4 @@
-# Website & Mobile Starter Project
+# Serverless REST API Project
 
 This project contains source code and supporting files for the serverless application that you created in the AWS Lambda console. You can update your application at any time by committing and pushing changes to your AWS CodeCommit or GitHub repository.
 
@@ -22,12 +22,11 @@ The sample application creates a RESTful API that takes HTTP requests and invoke
 
 **To use the sample API**
 
-1. Choose your application from the [**Applications page**](https://console.aws.amazon.com/lambda/home#/applications) in the Lambda console. (Make sure you're in the right region)
 1. Copy the URL that's listed under **API endpoint**.
-1. At the command line, use cURL to send POST requests to the application endpoint.
+2. At the command line, use cURL to send POST requests to the application endpoint.
 
-        $ ENDPOINT=<paste-your-endpoint-here>
-        $ curl -d '{"id":"1234ABCD", "name":"My item"}' -H "Content-Type: application/json" -X POST $ENDPOINT
+        $ ENDPOINT=https://k60td5zlxa.execute-api.eu-central-1.amazonaws.com/whoami
+        $ curl -d '{"id":"1234ABCD", "First Name":"My item" , "Last Name":"My item"}' -H "Content-Type: application/json" -X POST $ENDPOINT
         {"id":"1234ABCD","name":"My item"}
         $ curl -d '{"id":"2234ABCD", "name":"My other item"}' -H "Content-Type: application/json" -X POST $ENDPOINT
         {"id":"2234ABCD","name":"My other item"}

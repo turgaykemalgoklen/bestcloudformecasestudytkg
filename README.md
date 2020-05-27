@@ -15,6 +15,9 @@ Your Lambda application includes two AWS CloudFormation stacks. The first stack 
 The pipeline creates a second stack that contains your application's resources, including Lambda functions, an API Gateway API, and Amazon DynamoDB tables. These resources are defined in the `template.yml` file in this project. You can update the template to add AWS resources through the same deployment process that updates your application code. You can view those resources in the **Resources** section of the application overview in the Lambda console.
 
 For a full list of possible operations, see the [AWS Lambda Applications documentation](https://docs.aws.amazon.com/lambda/latest/dg/deploying-lambda-apps.html).
+## Reference Architecture 
+
+![Screenshot_1](https://user-images.githubusercontent.com/44449486/83066335-916de800-a06d-11ea-9581-fb39e0e796ac.png)
 
 ## Try the application out
 
@@ -22,7 +25,7 @@ The sample application creates a RESTful API that takes HTTP requests and invoke
 
 **To use the sample API**
 
-1. Copy the URL that's listed under **API endpoint**.
+1. Copy the URL https://k60td5zlxa.execute-api.eu-central-1.amazonaws.com/whoami
 2. At the command line, use cURL to send POST requests to the application endpoint.
 
         $ ENDPOINT=https://k60td5zlxa.execute-api.eu-central-1.amazonaws.com/whoami
@@ -33,7 +36,7 @@ The sample application creates a RESTful API that takes HTTP requests and invoke
 
 1. Send a GET request to the endpoint to get a list of items.
 
-        $ curl $ENDPOINT
+        $ curl https://k60td5zlxa.execute-api.eu-central-1.amazonaws.com/whoami
         [{"id":"1234ABCD","name":"My item"},{"id":"2234ABCD","name":"My other item"}]
 
 1. Send a GET request with the item ID to get a single item.
@@ -170,9 +173,7 @@ The AWS SAM CLI reads the application template to determine the API's routes and
             Method: GET
 ```
 
-## Reference Architecture 
 
-![Screenshot_1](https://user-images.githubusercontent.com/44449486/83066335-916de800-a06d-11ea-9581-fb39e0e796ac.png)
 
 
 * Node.js - [Install Node.js 10](https://nodejs.org/en/), including the npm package management tool.

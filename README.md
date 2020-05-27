@@ -170,9 +170,10 @@ The AWS SAM CLI reads the application template to determine the API's routes and
             Method: GET
 ```
 
-## Unit tests
+## Reference Architecture 
 
-Requirements:
+![Screenshot_1](https://user-images.githubusercontent.com/44449486/83066335-916de800-a06d-11ea-9581-fb39e0e796ac.png)
+
 
 * Node.js - [Install Node.js 10](https://nodejs.org/en/), including the npm package management tool.
 

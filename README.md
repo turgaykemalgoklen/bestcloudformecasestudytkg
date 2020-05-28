@@ -36,7 +36,7 @@ The sample application creates a RESTful API that takes HTTP requests and invoke
 2. At the command line, use cURL to send POST requests to the application endpoint.
 
         $ ENDPOINT=https://k60td5zlxa.execute-api.eu-central-1.amazonaws.com/whoami
-        $ curl -d '{"id":"1234ABCD", "First Name":"My item" , "Last Name":"My item"}' -H "Content-Type: application/json" -X POST $ENDPOINT
+        $ curl -d '{"id":"1234ABCD", "FirstName":"My item" , "LastName":"My item"}' -H "Content-Type: application/json" -X POST https://k60td5zlxa.execute-api.eu-central-1.amazonaws.com/whoami
         {"id":"1234ABCD","name":"My item"}
         $ curl -d '{"id":"2234ABCD", "name":"My other item"}' -H "Content-Type: application/json" -X POST $ENDPOINT
         {"id":"2234ABCD","name":"My other item"}
@@ -44,12 +44,12 @@ The sample application creates a RESTful API that takes HTTP requests and invoke
 1. Send a GET request to the endpoint to get a list of items.
 
         $ curl https://k60td5zlxa.execute-api.eu-central-1.amazonaws.com/whoami
-        [{"id":"1234ABCD","name":"My item"},{"id":"2234ABCD","name":"My other item"}]
+        [{"id":"0000a","FirstName":"Turgay Kemal" "LastName":"Goklen "},{"id":"01","FirstName":"bestcloudfor.me" ,      "LastName":"bestcloudfor.me"}]
 
 1. Send a GET request with the item ID to get a single item.
 
-        $ curl $ENDPOINT/1234ABCD
-        {"id":"1234ABCD","name":"My item"}
+        $ curl https://k60td5zlxa.execute-api.eu-central-1.amazonaws.com/whoami/01
+        {"id":"01","FirstName":"bestcloudfor.me" , "LastName":"bestcloudfor.me"}
 
 To view the application's API, functions, and table, use the links in the **Resources** section of the application overview in the Lambda console.
 

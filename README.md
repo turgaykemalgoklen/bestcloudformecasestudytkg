@@ -1,4 +1,4 @@
-# Serverless REST API Project for bestcloudfor.me Case Study
+# Serverless Cloud-Native REST API Project 
 ![indir](https://user-images.githubusercontent.com/44449486/83066708-21ac2d00-a06e-11ea-9247-f520060950ba.png)
 
 

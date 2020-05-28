@@ -1,5 +1,5 @@
 # Serverless Cloud-Native REST API Project 
-[![](https://images.microbadger.com/badges/version/gueils/whales:development.svg)]https://img.shields.io/badge/Version-v.0001-blue
+https://img.shields.io/badge/Version-v.0001-blue
 
 
 This project contains source code and supporting files for the serverless application that you created in the AWS Lambda console. You can update your application at any time by committing and pushing changes to your AWS CodeCommit or GitHub repository.

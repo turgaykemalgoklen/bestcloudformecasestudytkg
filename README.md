@@ -7,7 +7,7 @@
 
 
 
-This project contains source code and supporting files for the serverless application that you created in the AWS Lambda console. You can update your application at any time by committing and pushing changes to your AWS CodeCommit or GitHub repository.
+This project contains source code and supporting files for the serverless application that I created in the AWS Lambda console.
 
 This project includes the following files and folders:
 
@@ -17,9 +17,9 @@ This project includes the following files and folders:
 - template.yml - A SAM template that defines the application's AWS resources.
 - buildspec.yml -  A build specification file that tells AWS CodeBuild how to create a deployment package for the function.
 
-Your Lambda application includes two AWS CloudFormation stacks. The first stack creates the pipeline that builds and deploys your application.
+My Lambda application includes two AWS CloudFormation stacks. The first stack creates the pipeline that builds and deploys the application.
 
-The pipeline creates a second stack that contains your application's resources, including Lambda functions, an API Gateway API, and Amazon DynamoDB tables. These resources are defined in the `template.yml` file in this project. You can update the template to add AWS resources through the same deployment process that updates your application code. You can view those resources in the **Resources** section of the application overview in the Lambda console.
+The pipeline creates a second stack that contains the application's resources, including Lambda functions, an API Gateway API, and Amazon DynamoDB tables. These resources are defined in the `template.yml` file in this project. You can update the template to add AWS resources through the same deployment process that updates your application code. You can view those resources in the **Resources** section of the application overview in the Lambda console.
 
 For a full list of possible operations, see the [AWS Lambda Applications documentation](https://docs.aws.amazon.com/lambda/latest/dg/deploying-lambda-apps.html).
 ## Reference Architecture 
@@ -39,7 +39,7 @@ For a full list of possible operations, see the [AWS Lambda Applications documen
 
 ## Try the application out
 
-The sample application creates a RESTful API that takes HTTP requests and invokes Lambda functions. The API has POST and GET methods on the root path to create and list items. It has a GET method that takes an ID path parameter to retrieve items. Each method maps to one of the application's three Lambda functions.
+The  application creates a RESTful API that takes HTTP requests and invokes Lambda functions. The API has POST and GET methods on the root path to create and list items. It has a GET method that takes an ID path parameter to retrieve items. Each method maps to one of the application's three Lambda functions.
 
 **To use the sample API**
 
@@ -49,7 +49,7 @@ The sample application creates a RESTful API that takes HTTP requests and invoke
         $ ENDPOINT=https://k60td5zlxa.execute-api.eu-central-1.amazonaws.com/whoami
         $ curl -d '{"id":"1234ABCD", "FirstName":"My item" , "LastName":"My item"}' -H "Content-Type: application/json" -X POST https://k60td5zlxa.execute-api.eu-central-1.amazonaws.com/whoami
         {"id":"1234ABCD","name":"My item"}
-        $ curl -d '{"id":"2234ABCD", "name":"My other item"}' -H "Content-Type: application/json" -X POST $ENDPOINT
+        $ curl -d '{"id":"2234ABCD", "name":"My other item"}' -H "Content-Type: application/json" -X POST https://k60td5zlxa.execute-api.eu-central-1.amazonaws.com/whoami
         {"id":"2234ABCD","name":"My other item"}
 
 1. Send a GET request to the endpoint to get a list of items.

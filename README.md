@@ -32,8 +32,8 @@ For a full list of possible operations, see the [AWS Lambda Applications documen
 1. Lambda for trigger API
 2. API Gateway for API management
 3. DynamoDB for save ID,FirstName,LastName parameters
-4.CloudFormation for provisining infastructure as code(IaS)
-5.CodeCommit&CodeStar&AWS CodePipeline for managining versions&Github repo creation.
+4. CloudFormation for provisining infastructure as code(IaS)
+5. CodeCommit&CodeStar&AWS CodePipeline for managining versions&Github repo creation.
 
 
 

@@ -26,6 +26,17 @@ For a full list of possible operations, see the [AWS Lambda Applications documen
 
 ![Screenshot_1](https://user-images.githubusercontent.com/44449486/83066335-916de800-a06d-11ea-9581-fb39e0e796ac.png)
 
+
+
+## Core Services
+1. Lambda for trigger API
+2. API Gateway for API management
+3. DynamoDB for save ID,FirstName,LastName parameters
+4.CloudFormation for provisining infastructure as code(IaS)
+5.CodeCommit&CodeStar&AWS CodePipeline for managining versions&Github repo creation.
+
+
+
 ## Try the application out
 
 The sample application creates a RESTful API that takes HTTP requests and invokes Lambda functions. The API has POST and GET methods on the root path to create and list items. It has a GET method that takes an ID path parameter to retrieve items. Each method maps to one of the application's three Lambda functions.

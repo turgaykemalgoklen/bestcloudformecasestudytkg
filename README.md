@@ -202,6 +202,13 @@ Tests are defined in the \_\_tests__ folder in this project. Use `npm` to instal
 my-application$ npm install
 my-application$ npm run test
 ```
+## Pull Dockerized Application
+```
+docker pull 27061998/dockerhub:bestcloudformecasestudy
+
+
+
+..
 
 ## Resources
 

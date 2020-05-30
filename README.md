@@ -203,12 +203,14 @@ my-application$ npm install
 my-application$ npm run test
 ```
 ## Pull Dockerized Application
-```
+
+```linux
 docker pull 27061998/dockerhub:bestcloudformecasestudy
+```
 
 
 
-..
+
 
 ## Resources
 
